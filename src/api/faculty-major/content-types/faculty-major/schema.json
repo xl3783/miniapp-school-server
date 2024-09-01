@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "faculty_majors",
+  "info": {
+    "singularName": "faculty-major",
+    "pluralName": "faculty-majors",
+    "displayName": "FacultyMajor",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "intro_type": {
+      "type": "integer"
+    },
+    "is_del": {
+      "type": "integer"
+    },
+    "intro_text": {
+      "type": "richtext"
+    },
+    "faculty": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::faculty.faculty",
+      "inversedBy": "faculty_majors"
+    }
+  }
+}

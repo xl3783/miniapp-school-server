@@ -1,0 +1,77 @@
+{
+  "kind": "singleType",
+  "collectionName": "home_configs",
+  "info": {
+    "singularName": "home-config",
+    "pluralName": "home-configs",
+    "displayName": "Home-Config",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "score_list": {
+      "type": "integer"
+    },
+    "score_style": {
+      "type": "integer"
+    },
+    "is_get_phone": {
+      "type": "integer"
+    },
+    "enroll_plan_style": {
+      "type": "integer"
+    },
+    "enroll_plan_list": {
+      "type": "integer"
+    },
+    "major_intro_style": {
+      "type": "integer"
+    },
+    "is_showall": {
+      "type": "integer"
+    },
+    "no_mourn": {
+      "type": "integer"
+    },
+    "live_list": {
+      "type": "integer"
+    },
+    "title_name": {
+      "type": "string"
+    },
+    "title_position": {
+      "type": "integer"
+    },
+    "color": {
+      "type": "string"
+    },
+    "logo": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "is_collect": {
+      "type": "integer"
+    },
+    "name": {
+      "type": "string"
+    },
+    "enroll_type": {
+      "type": "integer"
+    },
+    "is_show_support": {
+      "type": "integer"
+    },
+    "is_privacy": {
+      "type": "integer"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "kind": "singleType",
+  "collectionName": "college_introductions",
+  "info": {
+    "singularName": "college-introduction",
+    "pluralName": "college-introductions",
+    "displayName": "CollegeIntroduction",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "content": {
+      "type": "richtext"
+    },
+    "c2": {
+      "type": "blocks"
+    }
+  }
+}

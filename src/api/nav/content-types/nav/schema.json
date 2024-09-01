@@ -1,0 +1,46 @@
+{
+  "kind": "collectionType",
+  "collectionName": "navs",
+  "info": {
+    "singularName": "nav",
+    "pluralName": "navs",
+    "displayName": "Nav",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "jump_url": {
+      "type": "string"
+    },
+    "base_url": {
+      "type": "string"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "jump_type": {
+      "type": "integer"
+    },
+    "type": {
+      "type": "integer"
+    },
+    "sort_index": {
+      "type": "integer",
+      "default": 999999
+    }
+  }
+}

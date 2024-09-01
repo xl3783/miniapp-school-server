@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ui_components",
+  "info": {
+    "singularName": "ui-component",
+    "pluralName": "ui-components",
+    "displayName": "UIComponent"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "type": {
+      "type": "integer"
+    },
+    "position": {
+      "type": "integer"
+    },
+    "title": {
+      "type": "string"
+    },
+    "media_resources": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::media-resource.media-resource"
+    }
+  }
+}

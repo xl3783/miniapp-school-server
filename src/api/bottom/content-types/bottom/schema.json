@@ -1,0 +1,33 @@
+{
+  "kind": "singleType",
+  "collectionName": "bottoms",
+  "info": {
+    "singularName": "bottom",
+    "pluralName": "bottoms",
+    "displayName": "bottom",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "style": {
+      "type": "integer"
+    },
+    "unchoose_color": {
+      "type": "string"
+    },
+    "choose_color": {
+      "type": "string"
+    },
+    "font_size": {
+      "type": "integer"
+    },
+    "bottom_items": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::bottom-item.bottom-item"
+    }
+  }
+}

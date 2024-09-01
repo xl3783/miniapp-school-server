@@ -1,0 +1,46 @@
+{
+  "kind": "collectionType",
+  "collectionName": "media_resources",
+  "info": {
+    "singularName": "media-resource",
+    "pluralName": "media-resources",
+    "displayName": "MediaResource"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "source_type": {
+      "type": "integer"
+    },
+    "jump_url": {
+      "type": "string"
+    },
+    "jump_type": {
+      "type": "integer"
+    },
+    "type": {
+      "type": "integer"
+    },
+    "category_ids": {
+      "type": "string"
+    },
+    "base_url": {
+      "type": "string"
+    }
+  }
+}

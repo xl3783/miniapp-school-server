@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "banner_items",
+  "info": {
+    "singularName": "banner-item",
+    "pluralName": "banner-items",
+    "displayName": "BannerItem",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "link": {
+      "type": "string"
+    }
+  }
+}
