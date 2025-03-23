@@ -1,0 +1,9 @@
+.git
+.gitignore
+.env
+node_modules
+.tmp
+.cache
+build
+.DS_Store
+*.log 

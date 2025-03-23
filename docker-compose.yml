@@ -1,0 +1,25 @@
+version: '3'
+services:
+  strapi:
+    container_name: strapi
+    build: .
+    image: strapi-mini-school:latest
+    restart: unless-stopped
+    env_file: .env
+    environment:
+      DATABASE_CLIENT: sqlite
+      DATABASE_FILENAME: /app/data/data.db
+    volumes:
+      - ./config:/app/config
+      - ./src:/app/src
+      - ./package.json:/app/package.json
+      - ./yarn.lock:/app/yarn.lock
+      - ./.env:/app/.env
+      - ./public/uploads:/app/public/uploads
+      - strapi_data:/app/data
+    ports:
+      - '1337:1337'
+
+volumes:
+  strapi_data:
+    name: strapi_mini_school_data 
